@@ -38,7 +38,7 @@ app.get("/heroes/:id", (req, res) => {
   if (data) {
     res.send(data)
   } else {
-    res.send()
+    res.status(404).send()
   }
 })
 
