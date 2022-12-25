@@ -20,12 +20,13 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
     try {
       var fPath = JSON.parse(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
       var r = fs.readFileSync(fPath)
-      Object.assign(res[hero], r)
+      Object.assign(res, r)
     } catch(err) {
       //
     }
   })
-  Heroes[hero] = res;
+  if (Object.keys(res).length>1)
+    Heroes[hero] = res;
 })
 
 app.get("/heroes", (req, res) => {
