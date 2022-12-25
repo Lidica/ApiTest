@@ -17,7 +17,7 @@ var Heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes')).map(hero =
   var res = {};
   ['data', 'imprint', 'camping', 'skills', 'story'].forEach(file => {
     var fPath = path.join(process.cwd(), 'db', 'heroes', hero, file+'.json')
-    if (fs.existsSync(fPath) {
+    if (fs.existsSync(fPath)) {
       var r = fs.readFileSync(fPath)
       Object.assign(res, JSON.parse(r))
     }
