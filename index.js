@@ -2,13 +2,18 @@ const express = require("express");
 
 const app = express();
 
-import { readFileSync } from 'fs';
+import { readdirSync, readFileSync } from 'fs';
+
 import path from 'path';
 
-const file = path.join(process.cwd(), 'db', 'heroes', 'alencia', 'data.json');
-const stringified = readFileSync(file, 'utf8');
+const getDirectories = source =>
+  readdirSync(source, { withFileTypes: true })
+    .filter(dirent => dirent.isDirectory())
+    .map(dirent => dirent.name)
 
-var data = {file: stringified, meta: Date.now()}
+const heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes'));
+
+var data = {dir: heroes, meta: Date.now()}
 
 app.get("/", (req, res) => {
   res.send(data);
