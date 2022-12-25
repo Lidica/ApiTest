@@ -13,20 +13,32 @@ const getDirectories = source =>
 
 const heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes'));
 
-var Heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes')).map(hero => {
-  var res = {};
+var Heroes = {};
+getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
+  var res = {_id: hero};
   ['data', 'imprint', 'camping', 'skills', 'story'].forEach(file => {
-    var fPath = path.join(process.cwd(), 'db', 'heroes', hero, file+'.json')
-    if (fs.existsSync(fPath)) {
+    try {
+      var fPath = JSON.parse(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
       var r = fs.readFileSync(fPath)
-      Object.assign(res, JSON.parse(r))
+      Object.assign(res[hero], r)
+    } catch(err) {
+      //
     }
   })
-  return res
+  Heroes[hero] = res
 })
 
-app.get("/", (req, res) => {
+app.get("/heroes", (req, res) => {
   res.send(Heroes);
+})
+
+app.get("/heroes/:id", (req, res) => {
+  var data = Heroes[req.params.id];
+  if (data) {
+    res.send(data)
+  } else {
+    res.send()
+  }
 })
 
 app.listen(5000, () => {
