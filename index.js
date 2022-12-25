@@ -57,7 +57,8 @@ app.get("/hero", (req, res) => {
       role: h.role,
       attribute: h.attribute,
       zodiac: h.zodiac,
-      rarity: h.rarity
+      rarity: h.rarity,
+      sex: h.sex || 0
     }
   }
   res.send(list);
