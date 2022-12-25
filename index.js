@@ -24,25 +24,30 @@ const getDirectories = source =>
     .filter(dirent => dirent.isDirectory())
     .map(dirent => dirent.name)
 
+const getJSON = source => {
+  try {
+    return JSON.parse(fs.readFileSync(source))
+  } catch() {
+    return null
+  }
+}
+
 const heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes'));
 
 var Heroes = {};
 getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
   var res = {_id: hero};
   ['main', 'imprint', 'camping', 'skills', 'story'].forEach(file => {
-    try {
-      var fPath = path.join(process.cwd(), 'db', 'heroes', hero, file+'.json')
-      var r = fs.readFileSync(fPath)
-      Object.assign(res, JSON.parse(r))
-    } catch(err) {
-      //
-    }
-    try { // read exlcusive equipment
-      var fPath = path.join(process.cwd(), 'db', 'heroes', hero, 'ee.json')
-      var r = fs.readFileSync(fPath)
-      Object.assign(res, {exclusive_equipment: JSON.parse(r)})
-    } catch(err) {}
+    var result = getJSON(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
+    if (result)
+      Object.assign(res, result);
   })
+  [['ee', 'exclusive_equipment']. ['skills', 'skills'], ['camping', 'camping']].forEach(file => {
+    var result = getJSON(path.join(process.cwd(), 'db', 'heroes', hero, file[0]+'.json'))
+    if (result)
+      Object.assign(res, {[file[1]]: result});
+  })
+  
   if (Object.keys(res).length>1)
     Heroes[hero] = res;
 })
