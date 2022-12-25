@@ -25,7 +25,8 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
       //
     }
   })
-  Heroes[hero] = res
+  if (Object.keys(res) > 1)
+    Heroes[hero] = res;
 })
 
 app.get("/heroes", (req, res) => {
