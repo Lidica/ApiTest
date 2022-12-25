@@ -52,7 +52,7 @@ app.get("/hero", (req, res) => {
   for (hero in Heroes) {
     var h = Heroes[h]
     list[hero] = {
-      id: h,
+      id: h.id,
       _id: hero,
       role: h.role,
       attribute: h.attribute,
