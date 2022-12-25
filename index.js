@@ -47,11 +47,11 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
     Heroes[hero] = res;
 })
 
-app.get("/heroes", (req, res) => {
+app.get("/hero", (req, res) => {
   res.send(Heroes);
 })
 
-app.get("/heroes/:id", (req, res) => {
+app.get("/hero/:id", (req, res) => {
   var data = Heroes[req.params.id];
   if (data) {
     res.send(data)
