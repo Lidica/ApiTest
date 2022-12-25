@@ -4,7 +4,7 @@ const app = express();
 
 const fs = require('fs')
 
-import path from 'path';
+const path = require('path')
 
 const getDirectories = source =>
   fs.readdirSync(source, { withFileTypes: true })
