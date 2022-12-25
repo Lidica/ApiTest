@@ -41,7 +41,7 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
     var result = getJSON(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
     if (result)
       Object.assign(res, result);
-  })
+  });
   [['ee', 'exclusive_equipment']. ['skills', 'skills'], ['camping', 'camping']].forEach(file => {
     var result = getJSON(path.join(process.cwd(), 'db', 'heroes', hero, file[0]+'.json'))
     if (result)
