@@ -50,7 +50,7 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
 app.get("/hero", (req, res) => {
   var list = {};
   for (hero in Heroes) {
-    var h = Heroes[h]
+    var h = Heroes[hero]
     list[hero] = {
       id: h.id,
       _id: hero,
