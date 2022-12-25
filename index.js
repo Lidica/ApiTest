@@ -13,11 +13,22 @@ const getDirectories = source =>
 
 const heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes'));
 
-var data = {dir: heroes, meta: Date.now()}
+var Heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes')).map(hero => {
+  var res = {};
+  ['data', 'imprint', 'camping', 'skills', 'story'].forEach(file => {
+    try {
+      var r = JSON.parse(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
+      Object.assign(res, r)
+    } catch () {
+      // no file
+    }
+  })
+  return res
+})
 
 app.get("/", (req, res) => {
-  res.send(data);
-});
+  res.send(Heroes);
+})
 
 app.listen(5000, () => {
   console.log("Running on port 5000.");
