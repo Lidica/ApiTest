@@ -48,7 +48,19 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
 })
 
 app.get("/hero", (req, res) => {
-  res.send(Heroes);
+  var list = {}
+  for (hero in Heroes) {
+    var h = Heroes[h]
+    list[hero] = {
+      id: h,
+      _id: hero,
+      role: h.role,
+      attribute: h.attribute,
+      zodiac: h.zodiac,
+      rarity: h.rarity
+    }
+  }
+  res.send(list);
 })
 
 app.get("/hero/:id", (req, res) => {
