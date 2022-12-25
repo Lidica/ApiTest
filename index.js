@@ -40,7 +40,7 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
     try { // read exlcusive equipment
       var fPath = path.join(process.cwd(), 'db', 'heroes', hero, 'ee.json')
       var r = fs.readFileSync(fPath)
-      Object.assign(res, {exclusive_equipment: r})
+      Object.assign(res, {exclusive_equipment: JSON.parse(r)})
     } catch(err) {}
   })
   if (Object.keys(res).length>1)
