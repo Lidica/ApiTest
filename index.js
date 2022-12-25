@@ -20,7 +20,7 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
     try {
       var fPath = JSON.parse(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
       var r = fs.readFileSync(fPath)
-      Object.assign(res, r)
+      Object.assign(res, JSON.parse(r))
     } catch(err) {
       //
     }
