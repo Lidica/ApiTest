@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-import { readdirSync, readFileSync } from 'fs';
+import { readdirSync, existsSync, readFileSync } from 'fs';
 
 import path from 'path';
 
@@ -16,8 +16,9 @@ const heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes'));
 var Heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes')).map(hero => {
   var res = {};
   ['data', 'imprint', 'camping', 'skills', 'story'].forEach(file => {
-    var r = readFileSync(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
-    if (r) {
+    var fPath = path.join(process.cwd(), 'db', 'heroes', hero, file+'.json')
+    if (existsSync(fPath) {
+      var r = readFileSync(fPath)
       Object.assign(res, JSON.parse(r))
     }
   })
