@@ -1,0 +1,1204 @@
+[
+    {
+        "name": "Sequential Cutter",
+        "can_enhance": false,
+        "description": "Attacks with a sword, with a {{variable}} chance to provoke for 1 turn when the caster's Health is 50% or more, and increases Defense of the caster for 1 turn when the caster's Health is less than 50%. Damage dealt increases proportional to the caster's Defense.",
+        "values": [
+            0.5
+        ],
+        "passive": false,
+        "cooldown": 0,
+        "soul_gain": 1,
+        "pow": 1,
+        "att_rate": 0.5,
+        "buff": [
+            2
+        ],
+        "debuff": [
+            25
+        ],
+        "common": [],
+        "enhancements": [
+            {
+                "string": "+5% damage dealt",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 4000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 1,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    }
+                ],
+                "_id": "skill_0_enh_0"
+            },
+            {
+                "string": "+10% damage dealt",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 4000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 1,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    }
+                ],
+                "_id": "skill_0_enh_1"
+            },
+            {
+                "string": "+10% effect chance",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 9000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 1,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    },
+                    {
+                        "item": "ma_gem_es",
+                        "count": 1,
+                        "_id": "mysterious-flash",
+                        "identifier": "ma_gem_es",
+                        "name": "Mysterious Flash",
+                        "description": "At a glimpse it looks like a fragment containing the power of a spirit, but upon closer inspection you can feel an unknown power.",
+                        "category": "Catalyst",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "essence",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_gem_es.png"
+                        },
+                        "request_count": 2,
+                        "support_count": 1,
+                        "shops": [
+                            {
+                                "chapter": "2. Reingar",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "5S. Sun Desert",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "1. South Lefundos",
+                                "continent": "Eureka",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "1S. Pupuran Ruins",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "7. City of Starlight Constella",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "10. Distorted Dimension",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "2. Reingar World",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "5S. Sun Desert World",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            }
+                        ]
+                    }
+                ],
+                "_id": "skill_0_enh_2"
+            },
+            {
+                "string": "+15% effect chance",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 23000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 2,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    },
+                    {
+                        "item": "ma_gem_es",
+                        "count": 3,
+                        "_id": "mysterious-flash",
+                        "identifier": "ma_gem_es",
+                        "name": "Mysterious Flash",
+                        "description": "At a glimpse it looks like a fragment containing the power of a spirit, but upon closer inspection you can feel an unknown power.",
+                        "category": "Catalyst",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "essence",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_gem_es.png"
+                        },
+                        "request_count": 2,
+                        "support_count": 1,
+                        "shops": [
+                            {
+                                "chapter": "2. Reingar",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "5S. Sun Desert",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "1. South Lefundos",
+                                "continent": "Eureka",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "1S. Pupuran Ruins",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "7. City of Starlight Constella",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "10. Distorted Dimension",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "2. Reingar World",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "5S. Sun Desert World",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            }
+                        ]
+                    }
+                ],
+                "_id": "skill_0_enh_3"
+            },
+            {
+                "string": "+15% damage dealt",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 80000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 4,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    },
+                    {
+                        "item": "ma_raingar_es",
+                        "count": 2,
+                        "_id": "reingar-student-id",
+                        "identifier": "ma_raingar_es",
+                        "name": "Reingar Student ID",
+                        "description": "The personal information on this student ID was erased before it was discarded. It emits the endless desire for knowledge.",
+                        "category": "Catalyst",
+                        "attribute": null,
+                        "grade": 5,
+                        "type1": "essence",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_raingar_es.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": [
+                            {
+                                "chapter": "2. West Politia",
+                                "continent": "Eureka",
+                                "price": 400,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "2. Reingar World",
+                                "continent": "Ritania",
+                                "price": 400,
+                                "limit_count": 2,
+                                "period": "week"
+                            }
+                        ]
+                    }
+                ],
+                "_id": "skill_0_enh_4"
+            }
+        ],
+        "_id": "skill_0",
+        "assets": {
+            "icon": "https://assets.epicsevendb.com/_source/skill/sk_c1003_1.png"
+        }
+    },
+    {
+        "name": "Shield of Light",
+        "can_enhance": false,
+        "description": "Covers an ally with the Shield of Light, dispelling two debuffs and granting a barrier for 2 turns before increasing Combat Readiness by {{variable}}. Barrier strength is proportional to the caster's Defense.",
+        "values": [
+            0.1
+        ],
+        "passive": false,
+        "cooldown": 4,
+        "soul_gain": 2,
+        "pow": 1,
+        "att_rate": 0,
+        "buff": [
+            5
+        ],
+        "debuff": [],
+        "common": [],
+        "enhancements": [
+            {
+                "string": "+2% Combat Readiness",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 4000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 1,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    }
+                ],
+                "_id": "skill_1_enh_0"
+            },
+            {
+                "string": "+2% Combat Readiness",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 4000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 1,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    }
+                ],
+                "_id": "skill_1_enh_1"
+            },
+            {
+                "string": "-1 turn cooldown",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 9000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 1,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    },
+                    {
+                        "item": "ma_gem_es",
+                        "count": 1,
+                        "_id": "mysterious-flash",
+                        "identifier": "ma_gem_es",
+                        "name": "Mysterious Flash",
+                        "description": "At a glimpse it looks like a fragment containing the power of a spirit, but upon closer inspection you can feel an unknown power.",
+                        "category": "Catalyst",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "essence",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_gem_es.png"
+                        },
+                        "request_count": 2,
+                        "support_count": 1,
+                        "shops": [
+                            {
+                                "chapter": "2. Reingar",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "5S. Sun Desert",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "1. South Lefundos",
+                                "continent": "Eureka",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "1S. Pupuran Ruins",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "7. City of Starlight Constella",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "10. Distorted Dimension",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "2. Reingar World",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "5S. Sun Desert World",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            }
+                        ]
+                    }
+                ],
+                "_id": "skill_1_enh_2"
+            },
+            {
+                "string": "+3% Combat Readiness",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 23000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 2,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    },
+                    {
+                        "item": "ma_gem_es",
+                        "count": 3,
+                        "_id": "mysterious-flash",
+                        "identifier": "ma_gem_es",
+                        "name": "Mysterious Flash",
+                        "description": "At a glimpse it looks like a fragment containing the power of a spirit, but upon closer inspection you can feel an unknown power.",
+                        "category": "Catalyst",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "essence",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_gem_es.png"
+                        },
+                        "request_count": 2,
+                        "support_count": 1,
+                        "shops": [
+                            {
+                                "chapter": "2. Reingar",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "5S. Sun Desert",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "1. South Lefundos",
+                                "continent": "Eureka",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "1S. Pupuran Ruins",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "7. City of Starlight Constella",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "10. Distorted Dimension",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "2. Reingar World",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "5S. Sun Desert World",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            }
+                        ]
+                    }
+                ],
+                "_id": "skill_1_enh_3"
+            },
+            {
+                "string": "+3% Combat Readiness",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 80000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 4,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    },
+                    {
+                        "item": "ma_raingar_es",
+                        "count": 2,
+                        "_id": "reingar-student-id",
+                        "identifier": "ma_raingar_es",
+                        "name": "Reingar Student ID",
+                        "description": "The personal information on this student ID was erased before it was discarded. It emits the endless desire for knowledge.",
+                        "category": "Catalyst",
+                        "attribute": null,
+                        "grade": 5,
+                        "type1": "essence",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_raingar_es.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": [
+                            {
+                                "chapter": "2. West Politia",
+                                "continent": "Eureka",
+                                "price": 400,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "2. Reingar World",
+                                "continent": "Ritania",
+                                "price": 400,
+                                "limit_count": 2,
+                                "period": "week"
+                            }
+                        ]
+                    }
+                ],
+                "_id": "skill_1_enh_4"
+            }
+        ],
+        "_id": "skill_1",
+        "assets": {
+            "icon": "https://assets.epicsevendb.com/_source/skill/sk_c1003_2.png"
+        }
+    },
+    {
+        "name": "Goddess of Victory",
+        "can_enhance": true,
+        "description": "Gives blessing to all allies, increasing Attack for 1 turn, and Combat Readiness by {{variable}}.",
+        "values": [
+            0.15
+        ],
+        "passive": false,
+        "cooldown": 5,
+        "soul_gain": 3,
+        "pow": 1,
+        "att_rate": 0,
+        "buff": [
+            1,
+            2
+        ],
+        "debuff": [],
+        "common": [],
+        "soul_description": "Extends duration of buffs granted by this skill by 1 turn.",
+        "soul_requirement": 10,
+        "soul_pow": 1,
+        "soul_att_rate": 0,
+        "enhanced_description": "Gives blessing to all allies, increasing Attack for 2 turns, and Combat Readiness by {{variable}}. Grants increased Defense to the caster for 2 turns.",
+        "enhancements": [
+            {
+                "string": "+2% Combat Readiness",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 4000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 1,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    }
+                ],
+                "_id": "skill_2_enh_0"
+            },
+            {
+                "string": "+2% Combat Readiness",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 4000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 1,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    }
+                ],
+                "_id": "skill_2_enh_1"
+            },
+            {
+                "string": "-1 turn cooldown",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 9000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 1,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    },
+                    {
+                        "item": "ma_gem_es",
+                        "count": 1,
+                        "_id": "mysterious-flash",
+                        "identifier": "ma_gem_es",
+                        "name": "Mysterious Flash",
+                        "description": "At a glimpse it looks like a fragment containing the power of a spirit, but upon closer inspection you can feel an unknown power.",
+                        "category": "Catalyst",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "essence",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_gem_es.png"
+                        },
+                        "request_count": 2,
+                        "support_count": 1,
+                        "shops": [
+                            {
+                                "chapter": "2. Reingar",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "5S. Sun Desert",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "1. South Lefundos",
+                                "continent": "Eureka",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "1S. Pupuran Ruins",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "7. City of Starlight Constella",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "10. Distorted Dimension",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "2. Reingar World",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "5S. Sun Desert World",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            }
+                        ]
+                    }
+                ],
+                "_id": "skill_2_enh_2"
+            },
+            {
+                "string": "+3% Combat Readiness",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 23000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 2,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    },
+                    {
+                        "item": "ma_gem_es",
+                        "count": 3,
+                        "_id": "mysterious-flash",
+                        "identifier": "ma_gem_es",
+                        "name": "Mysterious Flash",
+                        "description": "At a glimpse it looks like a fragment containing the power of a spirit, but upon closer inspection you can feel an unknown power.",
+                        "category": "Catalyst",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "essence",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_gem_es.png"
+                        },
+                        "request_count": 2,
+                        "support_count": 1,
+                        "shops": [
+                            {
+                                "chapter": "2. Reingar",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "5S. Sun Desert",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "1. South Lefundos",
+                                "continent": "Eureka",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "1S. Pupuran Ruins",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "7. City of Starlight Constella",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "10. Distorted Dimension",
+                                "continent": "Cidonia",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "2. Reingar World",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "5S. Sun Desert World",
+                                "continent": "Ritania",
+                                "price": 120,
+                                "limit_count": 5,
+                                "period": "week"
+                            }
+                        ]
+                    }
+                ],
+                "_id": "skill_2_enh_3"
+            },
+            {
+                "string": "+3% Combat Readiness",
+                "costs": [
+                    {
+                        "item": "to_gold",
+                        "count": 80000,
+                        "_id": "to_gold",
+                        "identifier": "to_gold",
+                        "name": "Gold",
+                        "description": "A currency used across all continents to purchase various goods.",
+                        "assets": {
+                            "icon": "https://assets.epicsevendb.com/_source/item/token_gold.png"
+                        }
+                    },
+                    {
+                        "item": "ma_moragora1",
+                        "count": 4,
+                        "_id": "molagora",
+                        "identifier": "ma_moragora1",
+                        "name": "MolaGora",
+                        "description": "A screaming grass root",
+                        "category": "Skill Enhancer",
+                        "attribute": null,
+                        "grade": 3,
+                        "type1": "skillup",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_moragora1.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": []
+                    },
+                    {
+                        "item": "ma_raingar_es",
+                        "count": 2,
+                        "_id": "reingar-student-id",
+                        "identifier": "ma_raingar_es",
+                        "name": "Reingar Student ID",
+                        "description": "The personal information on this student ID was erased before it was discarded. It emits the endless desire for knowledge.",
+                        "category": "Catalyst",
+                        "attribute": null,
+                        "grade": 5,
+                        "type1": "essence",
+                        "type2": null,
+                        "assets": {
+                            "thumbnail": null,
+                            "icon": "https://assets.epicsevendb.com/_source/item/ma_raingar_es.png"
+                        },
+                        "request_count": 0,
+                        "support_count": 0,
+                        "shops": [
+                            {
+                                "chapter": "2. West Politia",
+                                "continent": "Eureka",
+                                "price": 400,
+                                "limit_count": 2,
+                                "period": "week"
+                            },
+                            {
+                                "chapter": "2. Reingar World",
+                                "continent": "Ritania",
+                                "price": 400,
+                                "limit_count": 2,
+                                "period": "week"
+                            }
+                        ]
+                    }
+                ],
+                "_id": "skill_2_enh_4"
+            }
+        ],
+        "_id": "skill_2",
+        "assets": {
+            "icon": "https://assets.epicsevendb.com/_source/skill/sk_c1003_3.png"
+        }
+    }
+]
