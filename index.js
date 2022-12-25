@@ -16,7 +16,7 @@ const heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes'));
 var Heroes = {};
 getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
   var res = {_id: hero};
-  ['data', 'imprint', 'camping', 'skills', 'story', 'ee', 'modifiers'].forEach(file => {
+  ['main', 'imprint', 'camping', 'skills', 'story', 'ee', 'modifiers'].forEach(file => {
     try {
       var fPath = JSON.parse(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
       var r = fs.readFileSync(fPath)
