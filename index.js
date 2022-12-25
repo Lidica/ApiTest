@@ -18,14 +18,15 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
   var res = {_id: hero};
   ['main', 'imprint', 'camping', 'skills', 'story', 'ee', 'modifiers'].forEach(file => {
     try {
-      var fPath = JSON.parse(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
+      var fPath = path.join(process.cwd(), 'db', 'heroes', hero, file+'.json')
       var r = fs.readFileSync(fPath)
       Object.assign(res, JSON.parse(r))
     } catch(err) {
       //
     }
   })
-  Heroes[hero] = res;
+  if (Object.keys(res).length>1)
+    Heroes[hero] = res;
 })
 
 app.get("/heroes", (req, res) => {
