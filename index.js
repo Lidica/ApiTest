@@ -1,12 +1,9 @@
 const express = require("express");
-const fs = require("fs")
 
 const app = express();
 
-var data = {file: fs.readFileSync('./db/heroes/alencia/data.json'), meta: Date.now()}
-
 app.get("/", (req, res) => {
-  res.send(data);
+  res.send('test');
 });
 
 app.listen(5000, () => {
