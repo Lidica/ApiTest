@@ -24,7 +24,7 @@ const getDirectories = source =>
     .filter(dirent => dirent.isDirectory())
     .map(dirent => dirent.name)
 
-const getJSON = source => {
+function getJSON (source) {
   try {
     return JSON.parse(fs.readFileSync(source))
   } catch() {
@@ -37,7 +37,7 @@ const heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes'));
 var Heroes = {};
 getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
   var res = {_id: hero};
-  ['main', 'imprint', 'camping', 'skills', 'story'].forEach(file => {
+  ['main', 'imprint', 'story'].forEach(file => {
     var result = getJSON(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
     if (result)
       Object.assign(res, result);
