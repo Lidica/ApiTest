@@ -119,7 +119,7 @@
                 "string": "Combat Readiness"
             },
             {
-                "symbol": ''
+                "symbol": ""
                 "value": -1,
                 "string": "turn cooldown"
             },
