@@ -20,19 +20,24 @@
         "common": [],
         "enhancements": [
             {
-                "string": "+5% damage dealt"
+                "value": 0.05,
+                "string": "damage dealt"
             },
             {
-                "string": "+10% damage dealt"
+                "value": 0.05,
+                "string": "damage dealt"
             },
             {
-                "string": "+10% effect chance"
+                "value": 0.1
+                "string": "effect chance"
             },
             {
-                "string": "+15% effect chance"
+                "value": 0.15
+                "string": "effect chance"
             },
             {
-                "string": "+15% damage dealt"
+                "value": 0.15,
+                "string": "damage dealt"
             }
         ]
     },
@@ -55,19 +60,25 @@
         "common": [],
         "enhancements": [
             {
-                "string": "+2% Combat Readiness"
+                "value": 0.02
+                "string": "Combat Readiness"
             },
             {
-                "string": "+2% Combat Readiness"
+                "value": 0.02
+                "string": "Combat Readiness"
             },
             {
-                "string": "-1 turn cooldown"
+                "symbol": "",
+                "value": -1
+                "string": "turn cooldown"
             },
             {
-                "string": "+3% Combat Readiness"
+                "value": 0.03,
+                "string": "Combat Readiness"
             },
             {
-                "string": "+3% Combat Readiness"
+                "value": 0.03,
+                "string": "Combat Readiness"
             }
         ],
         "_id": "skill_1",
@@ -100,19 +111,25 @@
         "enhanced_description": "Gives blessing to all allies, increasing Attack for 2 turns, and Combat Readiness by {{variable}}. Grants increased Defense to the caster for 2 turns.",
         "enhancements": [
             {
-                "string": "+2% Combat Readiness"
+                "value": 0.02,
+                "string": "Combat Readiness"
             },
             {
-                "string": "+2% Combat Readiness"
+                "value": 0.02,
+                "string": "Combat Readiness"
             },
             {
-                "string": "-1 turn cooldown"
+                "symbol": ''
+                "value": -1,
+                "string": "turn cooldown"
             },
             {
-                "string": "+3% Combat Readiness"
+                "value": 0.03,
+                "string": "Combat Readiness"
             },
             {
-                "string": "+3% Combat Readiness"
+                "value": 0.03,
+                "string": "Combat Readiness"
             }
         ],
         "_id": "skill_2",
