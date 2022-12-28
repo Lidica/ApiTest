@@ -28,11 +28,11 @@
                 "string": "damage dealt"
             },
             {
-                "value": 0.1
+                "value": 0.1,
                 "string": "effect chance"
             },
             {
-                "value": 0.15
+                "value": 0.15,
                 "string": "effect chance"
             },
             {
@@ -60,16 +60,15 @@
         "common": [],
         "enhancements": [
             {
-                "value": 0.02
+                "value": 0.02,
                 "string": "Combat Readiness"
             },
             {
-                "value": 0.02
+                "value": 0.02,
                 "string": "Combat Readiness"
             },
             {
-                "symbol": "",
-                "value": -1
+                "value": -1,
                 "string": "turn cooldown"
             },
             {
@@ -119,7 +118,6 @@
                 "string": "Combat Readiness"
             },
             {
-                "symbol": ""
                 "value": -1,
                 "string": "turn cooldown"
             },
