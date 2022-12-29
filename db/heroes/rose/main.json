@@ -2,8 +2,8 @@
     "id": "c1003",
     "name": "Rose",
     "moonlight": false,
-    "rarity": 4,
-    "attribute": "ice",
+    "rarity": 3,
+    "attribute": "light",
     "role": "knight",
     "zodiac": "scales",
     "sex": 2
