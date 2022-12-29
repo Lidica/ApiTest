@@ -1,0 +1,10 @@
+{
+  "id": "c1099",
+  "_id": "command-model-laika",
+  "name": "Command Model Laika",
+  "rarity": 5,
+  "attribute": "wind",
+  "role": "ranger",
+  "zodiac": "twins",
+  "sex": 2
+}

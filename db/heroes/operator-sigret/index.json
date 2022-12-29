@@ -1,0 +1,10 @@
+{
+  "id": "c2072",
+  "_id": "operator-sigret",
+  "name": "Operator Sigret",
+  "rarity": 5,
+  "attribute": "dark",
+  "role": "ranger",
+  "zodiac": "scales",
+  "sex": 2
+}

@@ -1,0 +1,10 @@
+{
+  "id": "c1110",
+  "_id": "flan",
+  "name": "Flan",
+  "rarity": 5,
+  "attribute": "ice",
+  "role": "ranger",
+  "zodiac": "goat",
+  "sex": 2
+}

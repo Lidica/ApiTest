@@ -1,0 +1,10 @@
+{
+  "id": "c1101",
+  "_id": "choux",
+  "name": "Choux",
+  "rarity": 5,
+  "attribute": "ice",
+  "role": "warrior",
+  "zodiac": "goat",
+  "sex": 2
+}

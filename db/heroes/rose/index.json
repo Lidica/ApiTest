@@ -1,0 +1,10 @@
+{
+  "id": "c1003",
+  "_id": "rose",
+  "name": "Rose",
+  "rarity": 4,
+  "attribute": "ice",
+  "role": "knight",
+  "zodiac": "scales",
+  "sex": 2
+}

@@ -1,0 +1,10 @@
+{
+  "id": "c2047",
+  "_id": "martial-artist-ken",
+  "name": "Martial Artist Ken",
+  "rarity": 5,
+  "attribute": "dark",
+  "role": "warrior",
+  "zodiac": "lion",
+  "sex": 1
+}

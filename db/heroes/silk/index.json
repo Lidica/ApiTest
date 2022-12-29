@@ -1,0 +1,10 @@
+{
+  "id": "c1004",
+  "_id": "silk",
+  "name": "Silk",
+  "rarity": 4,
+  "attribute": "wind",
+  "role": "ranger",
+  "zodiac": "maiden",
+  "sex": 2
+}

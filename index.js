@@ -37,7 +37,7 @@ const heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes'));
 var Heroes = {};
 getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
   var res = {_id: hero};
-  ['main', 'imprint', 'story'].forEach(file => {
+  ['index', 'imprint', 'story'].forEach(file => {
     var result = getJSON(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
     if (result)
       Object.assign(res, result);

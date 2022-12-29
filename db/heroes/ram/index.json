@@ -1,0 +1,10 @@
+{
+  "id": "c1115",
+  "_id": "ram",
+  "name": "Ram",
+  "rarity": 5,
+  "attribute": "wind",
+  "role": "mage",
+  "zodiac": "twins",
+  "sex": 2
+}

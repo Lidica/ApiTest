@@ -1,0 +1,10 @@
+{
+  "id": "c1029",
+  "_id": "leo",
+  "name": "Leo",
+  "rarity": 4,
+  "attribute": "wind",
+  "role": "ranger",
+  "zodiac": "goat",
+  "sex": 1
+}
