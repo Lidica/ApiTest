@@ -8,7 +8,7 @@
         "role": "knight",
         "rarity": 5,
         "stat": {
-            "type": "speed",
+            "type": "spd",
             "value": 5
         },
         "skills": [
