@@ -59,7 +59,7 @@ app.get("/hero", (req, res) => {
     list[hero] = {
       id: h.id,
       _id: hero,
-      name: hero.name,
+      name: h.name,
       role: h.role,
       attribute: h.attribute,
       zodiac: h.zodiac,
