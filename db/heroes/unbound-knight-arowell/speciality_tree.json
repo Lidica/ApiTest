@@ -1,0 +1,218 @@
+[
+                {
+                    string: 'Increase Effect Resistance',
+                    enhancements: [
+                        {
+                            type: 'stat',
+                            stat: 'resist',
+                            value: 0.03
+                        },
+                        {
+                            type: 'stat',
+                            stat: 'resist',
+                            value: 0.05
+                        },
+                        {
+                            type: 'stat',
+                            stat: 'resist',
+                            value: 0.07
+                        }
+                    ],
+                    enhance_string: 'Effect Resistance'
+                },
+                {
+                    string: 'Increase Health',
+                    enhancements: [
+                        {
+                            type: 'stat',
+                            stat: 'max_hp_rate',
+                            value: 0.05
+                        },
+                        {
+                            type: 'stat',
+                            stat: 'max_hp_rate',
+                            value: 0.07
+                        },
+                        {
+                            type: 'stat',
+                            stat: 'max_hp_rate',
+                            value: 0.08
+                        }
+                    ],
+                    enhance_string: 'Health'
+                },
+                {
+                    string: 'When using Shield Thrust, has a chance to recover Health of the caster by 5%',
+                    enhancements: [
+                        {
+                            type: 'skill',
+                            stat: null,
+                            value: 0.02
+                        },
+                        {
+                            type: 'skill',
+                            stat: null,
+                            value: 0.03
+                        },
+                        {
+                            type: 'skill',
+                            stat: null,
+                            value: 0.05
+                        }
+                    ],
+                    enhance_string: 'effect chance',
+                },
+                {
+                    string: 'Effect Resistance',
+                    enhancements: [
+                        {
+                            type: 'stat',
+                            stat: 'resist',
+                            value: 0.05
+                        },
+                        {
+                            type: 'stat',
+                            stat: 'resist',
+                            value: 0.07
+                        },
+                        {
+                            type: 'stat',
+                            stat: 'resist',
+                            value: 0.08
+                        }
+                    ],
+                    enhance_string: 'Effect Resistance'
+                },
+                null,
+                {
+                    string: 'When using Shield Thrust, increase Combat Readiness of the caster.',
+                    enhancements: [
+                        {
+                            type: 'cr',
+                            stat: null,
+                            value: 0.02
+                        },
+                        {
+                            type: 'cr',
+                            stat: null,
+                            value: 0.03
+                        },
+                        {
+                            type: 'cr',
+                            stat: null,
+                            value: 0.05
+                        }
+                    ],
+                    enhance_string: 'Combat Readiness',
+                },
+                null,
+                {
+                    string: 'Increase damage dealt by Judgment of Light.',
+                    enhancements: [
+                        {
+                            type: 'dmg',
+                            stat: null,
+                            value: 0.02
+                        },
+                        {
+                            type: 'dmg',
+                            stat: null,
+                            value: 0.03
+                        },
+                        {
+                            type: 'dmg',
+                            stat: null,
+                            value: 0.05
+                        }
+                    ],
+                    enhance_string: 'Damage dealt',
+                },
+                {
+                    string: 'At the start of the turn, when the caster does not have a debuff, has a chance to increase Effectivness for 1 turn.',
+                    enhancements: [
+                        {
+                            type: 'eff_chance',
+                            stat: null,
+                            value: 0.02
+                        },
+                        {
+                            type: 'eff_chance',
+                            stat: null,
+                            value: 0.03
+                        },
+                        {
+                            type: 'eff_chance',
+                            stat: null,
+                            value: 0.05
+                        }
+                    ],
+                    enhance_string: 'effect chance',
+                },
+                {
+                    string: 'Increase Attack of Light element allies',
+                    enhancements: [
+                        {
+                            type: 'allies_stat',
+                            stat: 'att_rate',
+                            value: 0.02
+                        },
+                        {
+                            type: 'allies_stat',
+                            stat: 'att_rate',
+                            value: 0.03
+                        },
+                        {
+                            type: 'allies_stat',
+                            stat: 'att_rate',
+                            value: 0.05
+                        }
+                    ],
+                    enhance_string: 'Attack',
+
+                },
+                null,
+                null,
+                {
+                    string: 'At the start of the battle, grants barrier proportional to the caster\'s max Health to Light elemental allies for 2 turns.',
+                    enhancements: [
+                        {
+                            type: 'barrier_strength',
+                            stat: null,
+                            value: 0.03
+                        },
+                        {
+                            type: 'barrier_strength',
+                            stat: null,
+                            value: 0.05
+                        },
+                        {
+                            type: 'barrier_strength',
+                            stat: null,
+                            value: 0.07
+                        }
+                    ],
+                    enhance_string: 'Barrier strength'
+                },
+                {
+                    string: 'After using Judgment of Light when the target is stunned, has a chance to decrease skill cooldown by 1 turn.',
+                    enhancements: [
+                        {
+                            type: 'effect_chance',
+                            stat: null,
+                            value: 0.02
+                        },
+                        {
+                            type: 'effect_chance',
+                            stat: null,
+                            value: 0.03
+                        },
+                        {
+                            type: 'effect_chance',
+                            stat: null,
+                            value: 0.05
+                        }
+                    ],
+                    enhance_string: 'effect chance'
+                },
+                null
+]
