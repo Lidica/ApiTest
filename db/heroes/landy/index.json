@@ -6,5 +6,6 @@
   "attribute": "wind",
   "role": "ranger",
   "zodiac": "lion",
-  "sex": 2
+  "sex": 2,
+  "limited": true
 }
