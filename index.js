@@ -44,9 +44,10 @@ var Buffs = {},
   supportedLanguages.forEach(lang => { type[0][lang] = {} })
   getJsonFiles(path.join(process.cwd(), 'db', type[1])).forEach(buffFile => {
     var data = getJSON(path.join(process.cwd(), 'db', type[1], buffFile))
+    var _id = buffFile.replace(/\.json$/i, '')
     if (data)
       supportedLanguages.forEach(lang => {
-        type[0][lang][buffFile.replace(/\.json$/i, '')] = Object.assign({id: data.id}, data[lang] || data[fallbackLanguage] || {name: 'MISSING BUFF TRANSLATION', description: 'MISSING BUFF TRANSLATION'});
+        type[0][lang][_id] = Object.assign({id: data.id, _id: _id}, data[lang] || data[fallbackLanguage] || {name: 'MISSING BUFF TRANSLATION', description: 'MISSING BUFF TRANSLATION'});
       });
   })
 })
