@@ -49,7 +49,7 @@ getJsonFiles(path.join(process.cwd(), 'db', 'buffs')).forEach(buffFile => {
 
 var Heroes = {};
 getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
-  var res = {_id: hero, buffs: ['attack_buff']};
+  var res = {_id: hero};
   ['index', 'imprint', 'story'].forEach(file => {
     var result = getJSON(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
     if (result)
@@ -59,6 +59,20 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
     var result = getJSON(path.join(process.cwd(), 'db', 'heroes', hero, file[0]+'.json'))
     if (result)
       Object.assign(res, {[file[1]]: result});
+  })
+
+  // add buffs/debuffs/common
+  res['buffs'] = ['attack_buff'],
+  res['debuffs'] = [],
+  res['common'] = [];
+
+  (res.skills || []).forEach(skill => {
+    ['debuffs', 'buffs', 'common'].forEach(type => {
+      skill[type].forEach(el => {
+        if (!res[type].includes(el))
+          res[type].push(el)
+      })
+    })
   })
 
   for (var i = 0; i < res.buffs.length; i++) {
