@@ -3,5 +3,8 @@
     "en": {
         "name": "Increase Attack",
         "description": "Increase Attack by 50%."
+    },
+    "jp": {
+        "name": "This is a test"
     }
 }
