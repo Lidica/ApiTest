@@ -79,7 +79,7 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
           res[type].push(el)
       })
     })
-  })
+  });
 
   [[Buffs, 'buffs'], [Debuffs, 'debuffs'], [Common, 'common']].forEach(type => {
     for (var i = 0; i < res[type[1]].length; i++) {
