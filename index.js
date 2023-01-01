@@ -41,7 +41,7 @@ function getJSON (source) {
 // Build Buffs 
 var Buffs = {};
 getJsonFiles(path.join(process.cwd(), 'db', 'buffs')).forEach(buffFile => {
-  var buff = getJSON(path.join(process.cwd(), 'db', 'heroes', hero, buffFile))
+  var buff = getJSON(path.join(process.cwd(), 'db', 'buffs', buffFile))
   if (buff) {
     Buffs[buffFile.replace(/\.json$/i, '')] = buff;
   }
