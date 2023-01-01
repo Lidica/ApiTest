@@ -32,14 +32,18 @@ function getJSON (source) {
 
 
 // Build Buffs 
-var Buffs = {}
-supportedLanguages.forEach(lang => {
-  Buffs[lang] = {}
-  getJsonFiles(path.join(process.cwd(), 'db', 'buffs')).forEach(buffFile => {
-    var buff = getJSON(path.join(process.cwd(), 'db', 'buffs', buffFile))
-    if (buff) {
-      Buffs[lang][buffFile.replace(/\.json$/i, '')] = Object.assign({id: buff.id}, buff[lang] || buff[fallbackLanguage] || {name: 'MISSING BUFF TRANSLATION', description: 'MISSING BUFF TRANSLATION'});
-    }
+var Buffs = {},
+    Debuffs = {},
+    Common = {};
+[[Buffs, 'buffs'], [Debuffs, 'debuffs'], [Common, 'common']].forEach(type => {
+  getJsonFiles(path.join(process.cwd(), 'db', type[1])).forEach(buffFile => {
+    var data = getJSON(path.join(process.cwd(), 'db', type[1], buffFile))
+    if (data)
+      supportedLanguages.forEach(lang => {
+        if (!type[0][lang])
+          type[0][lang] = {};
+        type[0][lang][buffFile.replace(/\.json$/i, '')] = Object.assign({id: data.id}, data[lang] || data[fallbackLanguage] || {name: 'MISSING BUFF TRANSLATION', description: 'MISSING BUFF TRANSLATION'});
+      });
   })
 })
 
@@ -73,12 +77,13 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
     })
   })
 
-  for (var i = 0; i < res.buffs.length; i++) {
-    if (Buffs['jp'][res.buffs[i]]) res.buffs[i] = Buffs['jp'][res.buffs[i]]
-  }
+  [[Buffs, 'buffs'], [Debuffs, 'debuffs'], [Common, 'common']].forEach(type => {
+    for (var i = 0; i < res[type[1]].length; i++) {
+      if (type[0]['jp'][res[type[1]][i]]) res[type[1]][i] = type[0]['jp'][res[type[1]]]
+    }
+  })
   
-  if (Object.keys(res).length>1)
-    Heroes[hero] = res;
+  Heroes[hero] = res;
 })
 
 app.get("/hero", (req, res) => {
