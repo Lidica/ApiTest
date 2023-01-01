@@ -79,7 +79,7 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
 
   [[Buffs, 'buffs'], [Debuffs, 'debuffs'], [Common, 'common']].forEach(type => {
     for (var i = 0; i < res[type[1]].length; i++) {
-      if (type[0]['jp'][res[type[1]][i]]) res[type[1]][i] = type[0]['jp'][res[type[1]]]
+      if (type[0]['jp'][res[type[1]][i]]) res[type[1]][i] = type[0]['jp'][res[type[1]][i]]
     }
   })
   
