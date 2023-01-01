@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs')
 const express = require("express");
 const app = express();
-const supportedLanguages = ['en'];
+const supportedLanguages = ['en', 'jp'];
 const fallbackLanguage = supportedLanguages[0];
 
 app.use(function (req, res, next) {
@@ -74,7 +74,7 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
   })
 
   for (var i = 0; i < res.buffs.length; i++) {
-    if (Buffs[fallbackLanguage][res.buffs[i]]) res.buffs[i] = Buffs[fallbackLanguage][res.buffs[i]]
+    if (Buffs['jp'][res.buffs[i]]) res.buffs[i] = Buffs['jp'][res.buffs[i]]
   }
   
   if (Object.keys(res).length>1)
