@@ -61,7 +61,7 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
       Object.assign(res, {[file[1]]: result});
   })
 
-  for (var i in res.buffs) {
+  for (var i = 0; i < res.buffs.length; i++) {
     if (Buffs[res.buffs[i]]) res.buffs[i] = Buffs[res.buffs[i]]
   }
   
