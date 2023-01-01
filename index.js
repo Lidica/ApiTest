@@ -46,8 +46,6 @@ var Buffs = {},
     var data = getJSON(path.join(process.cwd(), 'db', type[1], buffFile))
     if (data)
       supportedLanguages.forEach(lang => {
-        if (!type[0][lang])
-          type[0][lang] = {};
         type[0][lang][buffFile.replace(/\.json$/i, '')] = Object.assign({id: data.id}, data[lang] || data[fallbackLanguage] || {name: 'MISSING BUFF TRANSLATION', description: 'MISSING BUFF TRANSLATION'});
       });
   })
@@ -84,8 +82,8 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
   })
 
   [[Buffs, 'buffs'], [Debuffs, 'debuffs'], [Common, 'common']].forEach(type => {
-    var el = res[type[1]][i]
     for (var i = 0; i < res[type[1]].length; i++) {
+      var el = res[type[1]][i]
       if (type[0]['jp'][el]) res[type[1]][i] = type[0]['jp'][el]
     }
   })
