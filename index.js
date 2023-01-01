@@ -68,6 +68,8 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
 
   (res.skills || []).forEach(skill => {
     ['debuffs', 'buffs', 'common'].forEach(type => {
+      if (!skill[type])
+        return;
       skill[type].forEach(el => {
         if (!res[type].includes(el))
           res[type].push(el)
