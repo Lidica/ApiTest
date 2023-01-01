@@ -1,5 +1,7 @@
 {
     "id": "stic_att_up",
-    "name": "Increase Attack",
-    "description_en": "Increases Attack by 50%."
+    "en": {
+        "name": "Increase Attack",
+        "description": "Increase Attack by 50%."
+    }
 }

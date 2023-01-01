@@ -1,23 +1,16 @@
+const path = require('path')
+const fs = require('fs')
 const express = require("express");
-
 const app = express();
+const supportedLanguages = ['en'];
+const fallbackLanguage = supportedLanguages[0];
 
 app.use(function (req, res, next) {
-  // Website you wish to allow to connect
   res.setHeader('Access-Control-Allow-Origin', '*');
-
-  // Request methods you wish to allow
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-
-  // Request headers you wish to allow
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-  
   next()
 })
-
-const fs = require('fs')
-
-const path = require('path')
 
 const getDirectories = source =>
   fs.readdirSync(source, { withFileTypes: true })
@@ -39,12 +32,15 @@ function getJSON (source) {
 
 
 // Build Buffs 
-var Buffs = {};
-getJsonFiles(path.join(process.cwd(), 'db', 'buffs')).forEach(buffFile => {
-  var buff = getJSON(path.join(process.cwd(), 'db', 'buffs', buffFile))
-  if (buff) {
-    Buffs[buffFile.replace(/\.json$/i, '')] = buff;
-  }
+var Buffs = {}
+supportedLanguages.forEach(lang => {
+  Buffs[lang] = {}
+  getJsonFiles(path.join(process.cwd(), 'db', 'buffs')).forEach(buffFile => {
+    var buff = getJSON(path.join(process.cwd(), 'db', 'buffs', buffFile))
+    if (buff) {
+      Buffs[lang][buffFile.replace(/\.json$/i, '')] = Object.assign({id: buff.id}, buff[lang] || buff[fallbackLanguage] || {name: 'MISSING BUFF TRANSLATION', description: 'MISSING BUFF TRANSLATION'});
+    }
+  })
 })
 
 var Heroes = {};
@@ -78,7 +74,7 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
   })
 
   for (var i = 0; i < res.buffs.length; i++) {
-    if (Buffs[res.buffs[i]]) res.buffs[i] = Buffs[res.buffs[i]]
+    if (Buffs[fallbackLanguage][res.buffs[i]]) res.buffs[i] = Buffs[fallbackLanguage][res.buffs[i]]
   }
   
   if (Object.keys(res).length>1)
