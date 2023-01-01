@@ -17,10 +17,15 @@ const getDirectories = source =>
     .filter(dirent => dirent.isDirectory())
     .map(dirent => dirent.name)
 
-const getJsonFiles = source =>
-  fs.readdirSync(source, { withFileTypes: true })
-    .filter(dirent => !dirent.isDirectory() && /\.json$/i.test(dirent.name))
-    .map(dirent => dirent.name)
+const getJsonFiles = source => {
+  try {
+    return fs.readdirSync(source, { withFileTypes: true })
+      .filter(dirent => !dirent.isDirectory() && /\.json$/i.test(dirent.name))
+      .map(dirent => dirent.name)
+  } catch(err) {
+    return []
+  }
+}
 
 function getJSON (source) {
   try {
