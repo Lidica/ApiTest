@@ -41,13 +41,14 @@ var Buffs = {},
     Debuffs = {},
     Common = {};
 [[Buffs, 'buffs'], [Debuffs, 'debuffs'], [Common, 'common']].forEach(type => {
+  supportedLanguages.forEach(lang => { type[0][lang] = {} })
   getJsonFiles(path.join(process.cwd(), 'db', type[1])).forEach(buffFile => {
     var data = getJSON(path.join(process.cwd(), 'db', type[1], buffFile))
+    if (data)
       supportedLanguages.forEach(lang => {
         if (!type[0][lang])
           type[0][lang] = {};
-        if (data)
-          type[0][lang][buffFile.replace(/\.json$/i, '')] = Object.assign({id: data.id}, data[lang] || data[fallbackLanguage] || {name: 'MISSING BUFF TRANSLATION', description: 'MISSING BUFF TRANSLATION'});
+        type[0][lang][buffFile.replace(/\.json$/i, '')] = Object.assign({id: data.id}, data[lang] || data[fallbackLanguage] || {name: 'MISSING BUFF TRANSLATION', description: 'MISSING BUFF TRANSLATION'});
       });
   })
 })
