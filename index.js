@@ -24,6 +24,11 @@ const getDirectories = source =>
     .filter(dirent => dirent.isDirectory())
     .map(dirent => dirent.name)
 
+const getJsonFiles = source =>
+  fs.readdirSync(source, { withFileTypes: true })
+    .filter(dirent => !dirent.isDirectory() && /\.json$/i.test(dirent.name))
+    .map(dirent => dirent.name)
+
 function getJSON (source) {
   try {
     return JSON.parse(fs.readFileSync(source))
@@ -32,11 +37,19 @@ function getJSON (source) {
   }
 }
 
-const heroes = getDirectories(path.join(process.cwd(), 'db', 'heroes'));
+
+// Build Buffs 
+var Buffs = {};
+getJsonFiles(path.join(process.cwd(), 'db', 'buffs')).forEach(buffFile => {
+  var buff = getJSON(path.join(process.cwd(), 'db', 'heroes', hero, buffFile))
+  if (buff) {
+    Buffs[buffFile.replace(/\.json$/i, '')] = buff;
+  }
+})
 
 var Heroes = {};
 getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
-  var res = {_id: hero};
+  var res = {_id: hero, buffs: ['attack_buff']};
   ['index', 'imprint', 'story'].forEach(file => {
     var result = getJSON(path.join(process.cwd(), 'db', 'heroes', hero, file+'.json'))
     if (result)
@@ -47,6 +60,10 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
     if (result)
       Object.assign(res, {[file[1]]: result});
   })
+
+  for (var i in res.buffs) {
+    if (Buffs[res.buffs[i]]) res.buffs[i] = Buffs[res.buffs[i]]
+  }
   
   if (Object.keys(res).length>1)
     Heroes[hero] = res;
