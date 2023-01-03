@@ -21,13 +21,7 @@
         "enhancements": [
             {
                 "value": 0.05,
-                "string": "damage dealt",
-                "stats": [
-                    {
-                        "stat": "att_rate",
-                        "value": 0.04
-                    }
-                ]
+                "string": "damage dealt"
             },
             {
                 "value": 0.05,
