@@ -57,12 +57,15 @@ var values = {
 }
 
 module.exports = function(hero) {
+    if (!hero)return;
     var devotionRanks = ["Z", "D", "C", "B", "A", "S", "SS", "SSS"];
     devotionRanks.splice(0, (hero.rarity || 5) - 2);
 
-    var value;
+    var value,
+        flags = hero.devotion?.slots?.filter(x=>x!=0).length;
+    console.log(flags)
 
-    hero.devotion && (value=values.dev[hero.devotion?.type+'_g'+hero.rarity+'_s'+(hero.devotion?.slots?.filter(x=>x!=0).length)]) && (hero.devotion.grades = {}) && devotionRanks.forEach((r, i) => {
+    hero.devotion && (value=values.dev[hero.devotion?.type+'_g'+hero.rarity+'_s'+ flags]) && (hero.devotion.grades = {}) && devotionRanks.forEach((r, i) => {
         hero.devotion.grades[r] = value + i * (value / 2)
     })
     hero.self_devotion && (value=values.self[hero.self_devotion?.type+'_g'+hero.rarity]) && (hero.self_devotion.grades = {}) && devotionRanks.forEach((r, i) => {
