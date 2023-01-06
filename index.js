@@ -1,8 +1,10 @@
-import imprintHero from './js/imprint'
 const path = require('path')
 const fs = require('fs')
 const express = require("express");
 const app = express();
+
+const imprintHero = require('./js/imprint')
+
 const supportedLanguages = ['en', 'jp'];
 const fallbackLanguage = supportedLanguages[0];
 
@@ -89,7 +91,7 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
       if (type[0]['jp'][el]) res[type[1]][i] = type[0]['jp'][el]
     }
   })
-  
+
   imprintHero(res)
 
   Heroes[hero] = res;
