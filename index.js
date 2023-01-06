@@ -1,3 +1,4 @@
+import imprintHero from './js/imprint'
 const path = require('path')
 const fs = require('fs')
 const express = require("express");
@@ -89,6 +90,8 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
     }
   })
   
+  imprintHero(res)
+
   Heroes[hero] = res;
 })
 
