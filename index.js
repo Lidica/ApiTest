@@ -92,7 +92,7 @@ getDirectories(path.join(process.cwd(), 'db', 'heroes')).forEach(hero => {
     }
   })
 
-  imprintHero(res)
+  imprintHero.set(res)
 
   Heroes[hero] = res;
 })

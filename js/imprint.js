@@ -56,7 +56,7 @@ var values = {
     }
 }
 
-module.exports = function(hero) {
+exports.set = function(hero) {
     var devotionRanks = ["Z", "D", "C", "B", "A", "S", "SS", "SSS"];
     devotionRanks.splice(0, (hero.rarity || 5) - 2);
 
