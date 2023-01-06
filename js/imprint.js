@@ -65,7 +65,7 @@ module.exports = function(hero) {
     hero.devotion && (value=values.dev[hero.devotion?.type+'_g'+hero.rarity+'_s'+hero.devotion?.slots.filter(x=>x).length]) && (hero.devotion.grades = {}) && devotionRanks.forEach((r, i) => {
         hero.devotion.grades[r] = value + i * (value / 2)
     })
-    hero.self_devotion && (value=values.self[hero.self_devotion?.type+'_g'+hero.rarity].filter(x=>x).length) && (hero.self_devotion.grades = {}) && devotionRanks.forEach((r, i) => {
+    hero.self_devotion && (value=values.self[hero.self_devotion?.type+'_g'+hero.rarity]) && (hero.self_devotion.grades = {}) && devotionRanks.forEach((r, i) => {
         hero.self_devotion.grades[r] = value + i * (value / 2)
     })
 }
