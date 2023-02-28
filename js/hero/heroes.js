@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 import path from 'path';
-import imprint from '../imprint.js'
+import imprint from './imprint.js'
 
 var Heroes = {},
     EnhanceData = {};

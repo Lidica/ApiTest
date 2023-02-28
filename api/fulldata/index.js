@@ -2,6 +2,7 @@ import { readFileSync } from 'fs';
 import path from 'path';
 
 export default async function handler(req, res) {
+    await cors(req, res)
     try {
         res.setHeader('Content-Type', 'application/json');
         res.json({
