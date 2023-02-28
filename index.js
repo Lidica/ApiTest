@@ -9,7 +9,7 @@ const supportedLanguages = ['en', 'jp'];
 const fallbackLanguage = supportedLanguages[0];
 
 
-app.use(express.json({limit:'100mb'}));
+// app.use(express.json({limit:'100mb'}));
 app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
