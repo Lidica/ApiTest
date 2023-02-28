@@ -1,4 +1,4 @@
-import HeroDB from '../../js/heroes.js'
+import HeroDB from '../../js/hero/heroes.js'
 import { cors } from '../../js/middleware.js'
 
 export default async function handler(req, res) {

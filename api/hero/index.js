@@ -1,4 +1,4 @@
-import HeroList from '../../js/hero-list.js'
+import HeroList from '../../js/hero/hero-list.js'
 import { cors } from '../../js/middleware.js'
 
 export default async function handler(req, res) {
