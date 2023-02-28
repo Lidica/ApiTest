@@ -1,8 +1,8 @@
 import HeroDB from '../../js/heroes.js'
 import { cors } from '../../js/middleware.js'
 
-export default function handler(req, res) {
-    cors(req, res)
+export default async function handler(req, res) {
+    await cors(req, res)
 
     const { id } = req.query;
     var hero = HeroDB[id];

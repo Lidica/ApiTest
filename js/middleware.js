@@ -21,5 +21,5 @@ function runMiddleware(req, res, fn) {
 }
 
 export async function cors(req, res) {
-  return await runMiddleware(req, res, corsFn)
+  await runMiddleware(req, res, corsFn)
 }
