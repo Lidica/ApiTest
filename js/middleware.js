@@ -2,7 +2,7 @@ import Cors from 'cors'
 
 // Initializing the cors middleware
 // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
-const cors = Cors({
+const corsFn = Cors({
   methods: ['POST', 'GET', 'HEAD'],
 })
 
@@ -21,5 +21,5 @@ function runMiddleware(req, res, fn) {
 }
 
 export async function cors(req, res) {
-  return await runMiddleware(req, res, cors)
+  return await runMiddleware(req, res, corsFn)
 }
