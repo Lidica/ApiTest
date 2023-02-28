@@ -4,6 +4,7 @@ var values = {
         "att_g3_s4": 24,
         "def_g3_s4": 12,
         "def_rate_g4_s4": .024,
+        "def_rate_g4_s2": .029,
         "def_rate_g5_s4": .036,
         "def_rate_g5_s2": .043,
         "att_rate_g4_s2": .029,
@@ -12,6 +13,7 @@ var values = {
         "att_rate_g5_s4": .036,
         "cri_g4_s2": .043,
         "cri_g4_s4": .036,
+        "cri_g5_s2": .058,
         "cri_g5_s4": .048,
         "speed_g5_s4": 4,
         "speed_g4_s4": 3,
@@ -29,7 +31,8 @@ var values = {
         "res_g4_s4": .036,
         "res_g5_s4": .048,
         "coop_g4_s4": .007,
-        "coop_g5_s2": .009
+        "coop_g5_s2": .009,
+        "coop_g5_s4": 1
     },
     self: {
         "max_hp_g3": 180,
@@ -38,7 +41,7 @@ var values = {
         "res_g3": .045,
         "max_hp_rate_g5": .06,
         "max_hp_rate_g4": .04,
-        "def_rate_g4": 0.04,
+        "def_rate_g4": .04,
         "def_rate_g5": .06,
         "att_rate_g4": .04,
         "att_rate_g5": .06,
@@ -63,7 +66,7 @@ module.exports = function(hero) {
 
     var value,
         flags = hero.devotion?.slots?.filter(x=>x!=0).length;
-    console.log(flags)
+    // console.log(hero.name, hero.devotion?.type+'_g'+hero.rarity+'_s'+ flags)
 
     hero.devotion && (value=values.dev[hero.devotion?.type+'_g'+hero.rarity+'_s'+ flags]) && (hero.devotion.grades = {}) && devotionRanks.forEach((r, i) => {
         hero.devotion.grades[r] = value + i * (value / 2)

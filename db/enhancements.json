@@ -1,0 +1,272 @@
+[
+    {
+        "_id": "enh_damage_dealt",
+        "icon": null,
+        "name": {
+            "en": "damage dealt"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_effect_chance",
+        "icon": null,
+        "name": {
+            "en": "effect chance"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_sk_cooldown",
+        "icon": null,
+        "name": {
+            "en": "turn cooldown"
+        },
+        "description": {
+            "en": "-1"
+        }
+    },
+    {
+        "_id": "enh_barrier_strength",
+        "icon": null,
+        "name": {
+            "en": "barrier strength"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_ab_decrease",
+        "icon": null,
+        "name": {
+            "en": "Combat Readiness decrease"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_att_rate",
+        "icon": null,
+        "name": {
+            "en": "Attack"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_ab_up",
+        "icon": null,
+        "name": {
+            "en": "Combat Readiness"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_fighting_spirit_gain",
+        "icon": null,
+        "name": {
+            "en": "Fighting Spirit acquired"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_healing_eff",
+        "icon": null,
+        "name": {
+            "en": "healing"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_fighting_spirit_consumed",
+        "icon": null,
+        "name": {
+            "en": "Fighting Spirit Consumed"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_ilynav_rush_dmg",
+        "icon": null,
+        "name": {
+            "en": "damage dealt by Rush"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_all_stats",
+        "icon": null,
+        "name": {
+            "en": "all stats"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_dmg_received_limit",
+        "icon": null,
+        "name": {
+            "en": "damage received limit"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_heal_ab_up",
+        "icon": null,
+        "name": {
+            "en": "healing / Combat Readiness"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_counterattack_chance",
+        "icon": null,
+        "name": {
+            "en": "counterattack chance"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_soul_gain",
+        "icon": null,
+        "name": {
+            "en": "Soul acquired"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_cri",
+        "icon": null,
+        "name": {
+            "en": "Critical Hit Chance"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_dmg_reduction_up",
+        "icon": null,
+        "name": {
+            "en": "additional damage reduction"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_zeno_sk2",
+        "icon": null,
+        "name": {
+            "en": "Defense, damage dealt by Ancient Beast"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_dmg_received",
+        "icon": null,
+        "name": {
+            "en": "damage received"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_target_ab_up",
+        "icon": null,
+        "name": {
+            "en": "Target's Combat Readiness"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_decrease_att_chance",
+        "icon": null,
+        "name": {
+            "en": "decrease Attack chance"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_cri_res",
+        "icon": null,
+        "name": {
+            "en": "Critical Hit Resistance"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_dmg_additional_sk",
+        "icon": null,
+        "name": {
+            "en": "damage dealt by additional skill"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_dispel_debuff_chance",
+        "icon": null,
+        "name": {
+            "en": "dispel debuff effect chance"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_dmg_reduction_allies_no_caster",
+        "icon": null,
+        "name": {
+            "en": "damage reduction for all allies except for the caster"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "enh_buff_dispel_chance",
+        "icon": null,
+        "name": {
+            "en": "buff_dispel_chance"
+        },
+        "description": {
+            "en": ""
+        }
+    }
+]

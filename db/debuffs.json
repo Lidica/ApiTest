@@ -1,0 +1,272 @@
+[
+    {
+        "_id": "stic_att_dn",
+        "icon": null,
+        "name": {
+            "en": "Decrease Attack"
+        },
+        "description": {
+            "en": "Decrease Attack by 50%"
+        }
+    },
+    {
+        "_id": "stic_def_dn",
+        "icon": null,
+        "name": {
+            "en": "Decrease Defense"
+        },
+        "description": {
+            "en": "Decrease Defense by 70%"
+        }
+    },
+    {
+        "_id": "stic_dodge_dn",
+        "icon": null,
+        "name": {
+            "en": "Decrease Speed"
+        },
+        "description": {
+            "en": "Decrease Speed by 30%"
+        }
+    },
+    {
+        "_id": "stic_blind",
+        "icon": null,
+        "name": {
+            "en": "Decrease Hit Chance"
+        },
+        "description": {
+            "en": "Decrease Hit Chance by 50%"
+        }
+    },
+    {
+        "_id": "stic_stun",
+        "icon": null,
+        "name": {
+            "en": "Stun"
+        },
+        "description": {
+            "en": "The target becomes unable to act for a certain number of turns."
+        }
+    },
+    {
+        "_id": "stic_sleep",
+        "icon": null,
+        "name": {
+            "en": "Sleep"
+        },
+        "description": {
+            "en": "The target becomes unable to act for a certain number of turns. Decreases Critical Hit Resistance by 100%, and the effect is dispelled at the moment the target suffers damage from an attack."
+        }
+    },
+    {
+        "_id": "stic_heal_impossible",
+        "icon": null,
+        "name": {
+            "en": "Unhealable"
+        },
+        "description": {
+            "en": "Makes the target unable to be healed."
+        }
+    },
+    {
+        "_id": "stic_buf_impossible",
+        "icon": null,
+        "name": {
+            "en": "Cannot Buff"
+        },
+        "description": {
+            "en": "Makes the target unable to be buffed."
+        }
+    },
+    {
+        "_id": "stic_silence",
+        "icon": null,
+        "name": {
+            "en": "Silence"
+        },
+        "description": {
+            "en": "The target cannot use skills that require cooldowns."
+        }
+    },
+    {
+        "_id": "stic_provoke",
+        "icon": null,
+        "name": {
+            "en": "Provoke"
+        },
+        "description": {
+            "en": "Target attacks the enemy who provoked them with a basic skill at the start of the turn."
+        }
+    },
+    {
+        "_id": "stic_provoke_hp",
+        "icon": null,
+        "name": {
+            "en": "Redirected Provoke"
+        },
+        "description": {
+            "en": "Target attacks the enemy with the highest max Health with a basic skill at the start of the turn."
+        }
+    },
+    {
+        "_id": "stic_dot",
+        "icon": null,
+        "name": {
+            "en": "Poison"
+        },
+        "description": {
+            "en": "Receives damage equivalent to 5% of max Health at the start of the turn."
+        }
+    },
+    {
+        "_id": "stic_blaze",
+        "icon": null,
+        "name": {
+            "en": "Burn"
+        },
+        "description": {
+            "en": "Target receives huge damage proportional to the caster's Attack at the start of the turn."
+        }
+    },
+    {
+        "_id": "stic_blood",
+        "icon": null,
+        "name": {
+            "en": "Bleed"
+        },
+        "description": {
+            "en": "Target receives damage proportional to the caster's Attack at the start of the turn."
+        }
+    },
+    {
+        "_id": "stic_curse2",
+        "icon": null,
+        "name": {
+            "en": "Curse"
+        },
+        "description": {
+            "en": "A portion of the damage inflicted on allies except for the target by Single Attacks will also be suffered by the target as additional damage at the end of the turn."
+        }
+    },
+    {
+        "_id": "stic_bomb",
+        "icon": null,
+        "name": {
+            "en": "Bomb"
+        },
+        "description": {
+            "en": "At the end of the debuff duration, the target receives damage proportional to the caster's Attack and becomes unable to move for 1 turn. Debuff duration cannot be extended or decreased."
+        }
+    },
+    {
+        "_id": "stic_nail",
+        "icon": null,
+        "name": {
+            "en": "Magic Nail"
+        },
+        "description": {
+            "en": "When attacked, receives additional damage equivalent to 2% of max Health, with a 25% chance to be stunned for 1 turn."
+        }
+    },
+    {
+        "_id": "stic_vampire",
+        "icon": null,
+        "name": {
+            "en": "Vampiric Touch"
+        },
+        "description": {
+            "en": "Recovers 10% of the attacker's Health when attacking the target."
+        }
+    },
+    {
+        "_id": "stic_target",
+        "icon": null,
+        "name": {
+            "en": "Target"
+        },
+        "description": {
+            "en": "Increases damage received by the target by 15%, while decreasing Evasion by 15%."
+        }
+    },
+    {
+        "_id": "stic_ab_up_block",
+        "icon": null,
+        "name": {
+            "en": "Restrict"
+        },
+        "description": {
+            "en": "The target will receive no Combat Readiness increase/decrease effects other than those provided by their Speed stat."
+        }
+    },
+    {
+        "_id": "stic_stigma",
+        "icon": null,
+        "name": {
+            "en": "Stigma"
+        },
+        "description": {
+            "en": "Decreases amount recovered by 50% and reduces the effect of Combat Readiness increases by 50%."
+        }
+    },
+    {
+        "_id": "stic_dizzy",
+        "icon": null,
+        "name": {
+            "en": "Seal"
+        },
+        "description": {
+            "en": "Passive skill effects do not activate. Effective only against Heroes."
+        }
+    },
+    {
+        "_id": "stic_venom",
+        "icon": null,
+        "name": {
+            "en": "Venom"
+        },
+        "description": {
+            "en": "At the start of the turn, receives damage equivalent of 10% of max Health and is inflicted with injuries proportional to damage suffered. Venom effect applies to Heroes only."
+        }
+    },
+    {
+        "_id": "stic_random_debuff1",
+        "icon": null,
+        "name": {
+            "en": "Random Debuff"
+        },
+        "description": {
+            "en": "Decreased Attack, Decrease Hit Chance, Provoke, Silence, Restrict"
+        }
+    },
+    {
+        "_id": "stic_deceptive",
+        "icon": null,
+        "name": {
+            "en": "Beguile"
+        },
+        "description": {
+            "en": "At the end of the turn, deals additional damage to all allies of the target except for the target equivalent to 10% of their respective max Health. Beguile effect applies to Heroes only, and is dispelled once the effect is activated."
+        }
+    },
+    {
+        "_id": "stic_random_debuff2",
+        "icon": null,
+        "name": {
+            "en": "Random Debuff"
+        },
+        "description": {
+            "en": "Silence, Decrease Defense, Decrease Speed"
+        }
+    },
+    {
+        "_id": "cmn_random_debuff3",
+        "icon": null,
+        "name": {
+            "en": "Random Debuff"
+        },
+        "description": {
+            "en": "Silence, Decrease Defense, Decrease Attack, Unhealable"
+        }
+    }
+]

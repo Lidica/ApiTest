@@ -1,0 +1,382 @@
+[
+    {
+        "_id": "stic_att_up",
+        "icon": null,
+        "name": {
+            "en": "Increase Attack"
+        },
+        "description": {
+            "en": "Increase Attack by 50%."
+        }
+    },
+    {
+        "_id": "stic_att_up2",
+        "icon": null,
+        "name": {
+            "en": "Increase Attack (Greater)"
+        },
+        "description": {
+            "en": "Increase Attack by 75%."
+        }
+    },
+    {
+        "_id": "stic_def_up",
+        "icon": null,
+        "name": {
+            "en": "Increase Defense"
+        },
+        "description": {
+            "en": "Increase Defense by 60%."
+        }
+    },
+    {
+        "_id": "stic_speed_up",
+        "icon": null,
+        "name": {
+            "en": "Increase Speed"
+        },
+        "description": {
+            "en": "Increase Speed by 30%."
+        }
+    },
+    {
+        "_id": "stic_cri_up",
+        "icon": null,
+        "name": {
+            "en": "Increase Critical Hit Chance"
+        },
+        "description": {
+            "en": "Increase Critical Hit Chance by 50%."
+        }
+    },
+    {
+        "_id": "stic_cridmg_up",
+        "icon": null,
+        "name": {
+            "en": "Increase Critical Hit Damage"
+        },
+        "description": {
+            "en": "Increase Critical Hit Damage by 50%."
+        }
+    },
+    {
+        "_id": "stic_acc_up",
+        "icon": null,
+        "name": {
+            "en": "Increase Effectiveness"
+        },
+        "description": {
+            "en": "Increase Effectiveness by 50%."
+        }
+    },
+    {
+        "_id": "stic_res_inc",
+        "icon": null,
+        "name": {
+            "en": "Increase Effect Resistance"
+        },
+        "description": {
+            "en": "Increase Effect Resistance by 50%."
+        }
+    },
+    {
+        "_id": "stic_dodge_up",
+        "icon": null,
+        "name": {
+            "en": "Increase Evasion"
+        },
+        "description": {
+            "en": "Increase Evasion by 50%."
+        }
+    },
+    {
+        "_id": "stic_crires_up",
+        "icon": null,
+        "name": {
+            "en": "Increase Critical Hit Resistance"
+        },
+        "description": {
+            "en": "Increase Critical Hit Resistance by 50%."
+        }
+    },
+    {
+        "_id": "stic_protect",
+        "icon": null,
+        "name": {
+            "en": "Barrier"
+        },
+        "description": {
+            "en": "Neutralizes some of the damage taken when attacked."
+        }
+    },
+    {
+        "_id": "stic_debuf_impossible",
+        "icon": null,
+        "name": {
+            "en": "Immune"
+        },
+        "description": {
+            "en": "Unaffected by debuffs and some harmful effects."
+        }
+    },
+    {
+        "_id": "stic_heal",
+        "icon": null,
+        "name": {
+            "en": "Continuous Heal"
+        },
+        "description": {
+            "en": "Recovers 15% of max Health at the start of every turn. This effect can stack."
+        }
+    },
+    {
+        "_id": "stic_endure",
+        "icon": null,
+        "name": {
+            "en": "Skill Nullifier"
+        },
+        "description": {
+            "en": "Negates damage from skills."
+        }
+    },
+    {
+        "_id": "stic_immortality",
+        "icon": null,
+        "name": {
+            "en": "Immortal"
+        },
+        "description": {
+            "en": "The target cannot be killed for a certain number of turns."
+        }
+    },
+    {
+        "_id": "stic_invincible",
+        "icon": null,
+        "name": {
+            "en": "Invincible"
+        },
+        "description": {
+            "en": "Neutralizes all of damage taken when attacked."
+        }
+    },
+    {
+        "_id": "stic_bless",
+        "icon": null,
+        "name": {
+            "en": "Revive"
+        },
+        "description": {
+            "en": "Revives with 30% Health after being killed."
+        }
+    },
+    {
+        "_id": "stic_hide",
+        "icon": null,
+        "name": {
+            "en": "Stealth"
+        },
+        "description": {
+            "en": "Cannot be selected as a target for attacks if there are other allies, and suffer decreased damage from AoE attacks. Dispelled after taking damage from a skill attack."
+        }
+    },
+    {
+        "_id": "stic_counter",
+        "icon": null,
+        "name": {
+            "en": "Counterattack"
+        },
+        "description": {
+            "en": "Counterattacks with basic skill when attacked. Is not triggered by extra attacks or counterattacks."
+        }
+    },
+    {
+        "_id": "stic_guard",
+        "icon": null,
+        "name": {
+            "en": "Escort"
+        },
+        "description": {
+            "en": "The target receives 30% of the damage suffered by all allies in their place. When more than one damage distribution effect is granted, only the strongest effect is applied."
+        }
+    },
+    {
+        "_id": "stic_reflect",
+        "icon": null,
+        "name": {
+            "en": "Reflect"
+        },
+        "description": {
+            "en": "Reflects 30% of the damage suffered to the attacker when attacked. Reflected damage cannot be higher than the caster's max Health."
+        }
+    },
+    {
+        "_id": "stic_haki",
+        "icon": null,
+        "name": {
+            "en": "Vigor"
+        },
+        "description": {
+            "en": "Increase Attack and Defense by 30%. Cannot be dispelled."
+        }
+    },
+    {
+        "_id": "stic_madness",
+        "icon": null,
+        "name": {
+            "en": "Rage"
+        },
+        "description": {
+            "en": "Increase Attack and Speed by 10%. Rage cannot be dispelled."
+        }
+    },
+    {
+        "_id": "stic_detection_keep",
+        "icon": null,
+        "name": {
+            "en": "Perception"
+        },
+        "description": {
+            "en": "Increase Critical Hit Chance and Critical Hit Damage by 15%. Perception cannot be dispelled."
+        }
+    },
+    {
+        "_id": "stic_venomspread_keep",
+        "icon": null,
+        "name": {
+            "en": "Pestilence"
+        },
+        "description": {
+            "en": "After attacking on the bearer's turn, inflicts venom for 2 turns. Pestilence cannot be dispelled."
+        }
+    },
+    {
+        "_id": "stic_chiron_keep",
+        "icon": null,
+        "name": {
+            "en": "Chain of Chiron"
+        },
+        "description": {
+            "en": "After attacking, has a 25% chance to stun the target for 1 turn. Chain of Chiron cannot be dispelled."
+        }
+    },
+    {
+        "_id": "stic_milim_dragoneye_keep",
+        "icon": "/buff/stic_dragoneye_keep.png",
+        "name": {
+            "en": "Dragon Eye (Milim Eye)"
+        },
+        "description": {
+            "en": "Increases Hit Chance and Evasion by 20%. Dragon Eye (Milim Eye) cannot be dispelled."
+        }
+    },
+    {
+        "_id": "stic_flame_alchemist_keep",
+        "icon": null,
+        "name": {
+            "en": "Flame Alchemist"
+        },
+        "description": {
+            "en": "lncreases Hit Chance and Attack by 20%. Flame Alchemist cannot be dispelled unless attacked by an Ice elemental enemy."
+        }
+    },
+    {
+        "_id": "stic_showtime",
+        "icon": null,
+        "name": {
+            "en": "Idol"
+        },
+        "description": {
+            "en": "\"My live show won‘t stop until my turn is over!\" Cannot be dispelled."
+        }
+    },
+    {
+        "_id": "stic_oni_keep",
+        "icon": null,
+        "name": {
+            "en": "Demon Mode"
+        },
+        "description": {
+            "en": "Unaffected by debuffs and some harmful effects. Ignores Effect Resistance when attacking. This effect only applies to Hero skills. Demon Mode cannot be dispelled."
+        }
+    },
+    {
+        "_id": "stic_coop_keep",
+        "icon": null,
+        "name": {
+            "en": "Enhanced Dual Attack"
+        },
+        "description": {
+            "en": "When an ally except for the caster uses a skill and the caster is available to use a Dual Attack. Attacks the same target with a basic attack. Enhanced Dual Attack cannot be dispelled. Dispelled when the caster uses a Dual Attack."
+        }
+    },
+    {
+        "_id": "stic_hawkeye_keep",
+        "icon": null,
+        "name": {
+            "en": "Hawk's Eye"
+        },
+        "description": {
+            "en": "Increases Speed and Critical Hit Damage by 30%. Hawk's Eye cannot be dispelled."
+        }
+    },
+    {
+        "_id": "stic_spirit_keep",
+        "icon": null,
+        "name": {
+            "en": "Spirit's Blessing"
+        },
+        "description": {
+            "en": "Increase Effect Resistance by 60%. Spirit's Blessing cannot be dispelled."
+        }
+    },
+    {
+        "_id": "stic_att_inc",
+        "icon": null,
+        "name": {
+            "en": "Exploiting Weak Points"
+        },
+        "description": {
+            "en": "When attacking, increases damalge dealt by 20%. After attacking, this effect is dispelled."
+        }
+    },
+    {
+        "_id": "stic_rush",
+        "icon": null,
+        "name": {
+            "en": "Swift Attack"
+        },
+        "description": {
+            "en": "At the end of the turn, increases Combat Readiness by 50%. It is dispelled once the effect is activated."
+        }
+    },
+    {
+        "_id": "stic_random_buff1",
+        "icon": null,
+        "name": {
+            "en": "Random Buff"
+        },
+        "description": {
+            "en": "Immunity, Increase Attack, Increase Critical Hit Resistance, Increase Effect Resrstance"
+        }
+    },
+    {
+        "_id": "stic_random_buff2",
+        "icon": null,
+        "name": {
+            "en": "Random Buff"
+        },
+        "description": {
+            "en": "Increase Attack, Increase Critical Hit Chance, Increase Critical Hit Damage, Continuous Healing"
+        }
+    },
+    {
+        "_id": "stic_random_buff3",
+        "icon": null,
+        "name": {
+            "en": "Random Buff"
+        },
+        "description": {
+            "en": "Increase Effectiveness, Increase Critical Hit Chance, Continuous Healing"
+        }
+    }
+]

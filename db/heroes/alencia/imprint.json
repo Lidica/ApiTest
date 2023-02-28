@@ -1,45 +1,9 @@
 {
-
-	"devotion": {
-
-		"type": "def_rate",
-
-		"grades": {
-
-			"B": 0.043,
-
-			"A": 0.065,
-
-			"S": 0.086,
-
-			"SS": 0.107,
-
-			"SSS": 0.129
-
-		},
-
-		"formation": [0,1,1,0]
-
-	},
-
-	"self_devotion": {
-
-		"type": "max_hp_rate",
-
-		"grades": {
-
-			"B": 0.06,
-
-			"A": 0.09,
-
-			"S": 0.12,
-
-			"SS": 0.15,
-
-			"SSS": 0.18
-
-		}
-
-	}
-
+    "devotion": {
+        "type": "def_rate",
+        "slots": [0,1,1,0]
+    },
+    "self_devotion": {
+        "type": "max_hp_rate"
+    }
 }

@@ -5,17 +5,17 @@
             "enhancements": [
                 {
                     "type": "stat",
-                    "stat": "resist",
+                    "stat": "res",
                     "value": 0.03
                 },
                 {
                     "type": "stat",
-                    "stat": "resist",
+                    "stat": "res",
                     "value": 0.05
                 },
                 {
                     "type": "stat",
-                    "stat": "resist",
+                    "stat": "res",
                     "value": 0.07
                 }
             ],
@@ -68,17 +68,17 @@
             "enhancements": [
                 {
                     "type": "stat",
-                    "stat": "resist",
+                    "stat": "res",
                     "value": 0.05
                 },
                 {
                     "type": "stat",
-                    "stat": "resist",
+                    "stat": "res",
                     "value": 0.07
                 },
                 {
                     "type": "stat",
-                    "stat": "resist",
+                    "stat": "res",
                     "value": 0.08
                 }
             ],

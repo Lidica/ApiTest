@@ -1,0 +1,682 @@
+[
+    {
+        "_id": "cmn_penetration",
+        "icon": "/0_cecilia_ui/buff/cmn_penetration.png",
+        "name": {
+            "en": "Penetration"
+        },
+        "description": {
+            "en": "Ignores the target's Defense when inflicting damage."
+        }
+    },
+    {
+        "_id": "cmn_extra_turn",
+        "icon": "/0_cecilia_ui/buff/cmn_extra_turn.png",
+        "name": {
+            "en": "Extra Turn"
+        },
+        "description": {
+            "en": "Grants an extra turn."
+        }
+    },
+    {
+        "_id": "cmn_injury",
+        "icon": "/0_cecilia_ui/buff/cmn_injury.png",
+        "name": {
+            "en": "Injury"
+        },
+        "description": {
+            "en": "Decreases max Health cumulatively, up to a maximum of 50%. Effective only against Heroes. Unaffected by Effect Resistance or whether or not the attack hits."
+        }
+    },
+    {
+        "_id": "cmn_detonate",
+        "icon": "/0_cecilia_ui/buff/cmn_detonate.png",
+        "name": {
+            "en": "Detonate"
+        },
+        "description": {
+            "en": "Inflicts damage by activating any DoT effects inflicted on the enemy. Damage is proportional to the number of turns and number of effects."
+        }
+    },
+    {
+        "_id": "cmn_extinction",
+        "icon": "/0_cecilia_ui/buff/cmn_extinction.png",
+        "name": {
+            "en": "Extinction"
+        },
+        "description": {
+            "en": "The target cannot revive when killed by this skill."
+        }
+    },
+    {
+        "_id": "cmn_dual_attack",
+        "icon": "/0_cecilia_ui/buff/cmn_dual_attack.png",
+        "name": {
+            "en": "Dual Attack"
+        },
+        "description": {
+            "en": "Chance to attack an enemy with basic skill after an ally has attacked them with basic skill, unless unable to act. Cannot be triggered by counterattacks."
+        }
+    },
+    {
+        "_id": "cmn_soul_steal",
+        "icon": "/0_cecilia_ui/cmn_soul_steal.png",
+        "name": {
+            "en": "Soul Steal"
+        },
+        "description": {
+            "en": "Removes Soul from the target. This effect is unaffected by Hit or Effect Resistance."
+        }
+    },
+    {
+        "_id": "cmn_debuff_transfer",
+        "icon": "/0_cecilia_ui/buff/cmn_debuff_transfer.png",
+        "name": {
+            "en": "Transfer"
+        },
+        "description": {
+            "en": "Transfers debuffs from the caster to the target."
+        }
+    },
+    {
+        "_id": "cmn_skill_cd_up",
+        "icon": "/0_cecilia_ui/buff/cmn_skill_cd_up.png",
+        "name": {
+            "en": "Increase Skill Cooldown"
+        },
+        "description": {
+            "en": "Increase target's skill cooldown."
+        }
+    },
+    {
+        "_id": "cmn_skill_cd_down",
+        "icon": "/0_cecilia_ui/buff/cmn_skill_cd_down.png",
+        "name": {
+            "en": "Decrease Skill Cooldown"
+        },
+        "description": {
+            "en": "Decrease target's skill cooldown."
+        }
+    },
+    {
+        "_id": "cmn_ab_up",
+        "icon": "/0_cecilia_ui/buff/cmn_ab_up.png",
+        "name": {
+            "en": "Increase Combat Readiness"
+        },
+        "description": {
+            "en": "Increases the Combat Readiness of the target."
+        }
+    },
+    {
+        "_id": "cmn_ab_down",
+        "icon": "/0_cecilia_ui/buff/cmn_ab_down.png",
+        "name": {
+            "en": "Decrease Combat Readiness"
+        },
+        "description": {
+            "en": "Decrease the Combat Readiness of the target."
+        }
+    },
+    {
+        "_id": "cmn_cleanse",
+        "icon": "/0_cecilia_ui/buff/cmn_cleanse.png",
+        "name": {
+            "en": "Cleanse"
+        },
+        "description": {
+            "en": "Remove debuff from the target."
+        }
+    },
+    {
+        "_id": "cmn_dispel",
+        "icon": "/0_cecilia_ui/buff/cmn_dispel",
+        "name": {
+            "en": "Dispel"
+        },
+        "description": {
+            "en": "Remove buff from the target."
+        }
+    },
+    {
+        "_id": "cmn_single_target",
+        "icon": null,
+        "name": {
+            "en": "Single Target"
+        },
+        "description": {
+            "en": "Attacks a single enemy."
+        }
+    },
+    {
+        "_id": "cmn_extra_attack",
+        "icon": null,
+        "name": {
+            "en": "Extra Attack"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_attack_scaling",
+        "icon": null,
+        "name": {
+            "en": "Attack Scaling"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_max_health_scaling",
+        "icon": null,
+        "name": {
+            "en": "Caster's Max Health Scaling"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_aoe",
+        "icon": null,
+        "name": {
+            "en": "AoE"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_non_attack_skill",
+        "icon": null,
+        "name": {
+            "en": "Non Attack Skill"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_ignore_dmg_sharing",
+        "icon": null,
+        "name": {
+            "en": "Ignore Damage Sharing"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_negate_elemental_disadvantage",
+        "icon": null,
+        "name": {
+            "en": "Unaffected by Elemental Disadvantage"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_ab_reduce_decrease",
+        "icon": null,
+        "name": {
+            "en": "Reduce Combat Readiness decrease effects"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_cant_crit",
+        "icon": null,
+        "name": {
+            "en": "Cannot Trigger A Critical Hit"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_crit_dmg_reduction",
+        "icon": null,
+        "name": {
+            "en": "Critical Hit Damage Reduction"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_ignore_res",
+        "icon": null,
+        "name": {
+            "en": "Ignore Effect Resistance"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_fighting_spirit",
+        "icon": null,
+        "name": {
+            "en": "Fighting Spirit"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_buff_extend",
+        "icon": null,
+        "name": {
+            "en": "Extend Buff Duration"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_always_cri",
+        "icon": null,
+        "name": {
+            "en": "Guaranteed Critical Hit"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_fixed_damage",
+        "icon": null,
+        "name": {
+            "en": "Fixed Damage"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_buff_steal",
+        "icon": null,
+        "name": {
+            "en": "Buff Steal"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_cannot_counterattack",
+        "icon": null,
+        "name": {
+            "en": "Cannot Trigger a Counterattack"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_lifesteal",
+        "icon": null,
+        "name": {
+            "en": "Lifesteal"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_caste_lost_health_scaling",
+        "icon": null,
+        "name": {
+            "en": "Caster's lost Health Scaling"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_multiple_targets",
+        "icon": null,
+        "name": {
+            "en": "Multiple Targets"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_speed_scaling",
+        "icon": null,
+        "name": {
+            "en": "Speed Scaling"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_enemy_debuffs_scaling",
+        "icon": null,
+        "name": {
+            "en": "Enemy Debuffs Scaling"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_decrease_buff_duration",
+        "icon": null,
+        "name": {
+            "en": "Decrease Buff Duration"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_free_soulburn",
+        "icon": null,
+        "name": {
+            "en": "Free Soulburn"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_target_speed_scaling",
+        "icon": null,
+        "name": {
+            "en": "Targets Speed Scaling"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_effect_ignore_miss",
+        "icon": null,
+        "name": {
+            "en": "Effect Ignores Miss"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_dispel_stealth",
+        "icon": null,
+        "name": {
+            "en": "Dispel Stealth"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_remove_souls",
+        "icon": null,
+        "name": {
+            "en": "Remove Souls from the enemy"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_ab_reduce_increase",
+        "icon": null,
+        "name": {
+            "en": "Reduce Combat Readiness increase effects"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_damage_taken_cap",
+        "icon": null,
+        "name": {
+            "en": "Damage Taken Cap"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_fewer_enemies_scaling",
+        "icon": null,
+        "name": {
+            "en": "Fewer Enemies Scaling"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_barrier_inversion",
+        "icon": null,
+        "name": {
+            "en": "Barrier Inversion"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_heal",
+        "icon": null,
+        "name": {
+            "en": "Heal"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_counterattack",
+        "icon": null,
+        "name": {
+            "en": "Counterattack"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_advantageous_element",
+        "icon": null,
+        "name": {
+            "en": "Advantageous Element"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_def_scaling",
+        "icon": null,
+        "name": {
+            "en": "Defense Scaling"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_splash_damage",
+        "icon": null,
+        "name": {
+            "en": "Splash Damage"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_target_lost_health",
+        "icon": null,
+        "name": {
+            "en": "Target's Lost Health"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_caster_lvl_scaling",
+        "icon": null,
+        "name": {
+            "en": "Caster's Level Scaling"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_damage_reduction",
+        "icon": null,
+        "name": {
+            "en": "Damage Reduction"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_damage_share",
+        "icon": null,
+        "name": {
+            "en": "Damage share"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_extend_debuff_duration",
+        "icon": null,
+        "name": {
+            "en": "Extend Debuff Duration"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_target_max_health",
+        "icon": null,
+        "name": {
+            "en": "Target's max Health"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_additional_dmg",
+        "icon": null,
+        "name": {
+            "en": "Additional damage"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_increased_hit_chance",
+        "icon": null,
+        "name": {
+            "en": "Increased Hit Chance"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_buff_copy",
+        "icon": null,
+        "name": {
+            "en": "Copy Buffs"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_resource_reduction",
+        "icon": null,
+        "name": {
+            "en": "Resource Reduction"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_caster_buff_scaling",
+        "icon": null,
+        "name": {
+            "en": "Number of buffs scaling"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_dmg_reflect",
+        "icon": null,
+        "name": {
+            "en": "Reflect damage"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_max_health_difference",
+        "icon": null,
+        "name": {
+            "en": "Max Health Difference"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_more_enemies_scaling",
+        "icon": null,
+        "name": {
+            "en": "More enemies scaling"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_revive",
+        "icon": null,
+        "name": {
+            "en": "Revive"
+        },
+        "description": {
+            "en": ""
+        }
+    },
+    {
+        "_id": "cmn_soul_gain_reduction",
+        "icon": null,
+        "name": {
+            "en": "Soul Gain Reduction"
+        },
+        "description": {
+            "en": ""
+        }
+    }
+]

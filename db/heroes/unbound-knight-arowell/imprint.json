@@ -1,27 +1,9 @@
 {
     "self_devotion": {
-        "type": "max_hp",
-        "grades": {
-            "D": 180,
-            "C": 270,
-            "B": 360,
-            "A": 450,
-            "S": 540,
-            "SS": 630,
-            "SSS": 720
-        }
+        "type": "max_hp"
     },
     "devotion": {
         "type": "max_hp",
-        "grades": {
-            "D": 120,
-            "C": 180,
-            "B": 240,
-            "A": 300,
-            "S": 360,
-            "SS": 420,
-            "SSS": 480
-        },
         "slots": [1, 1, 1, 1]
     }
 }
