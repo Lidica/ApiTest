@@ -1,9 +1,0 @@
-{
-    "devotion": {
-        "type": "def_rate",
-        "slots": [0,1,1,0]
-    },
-    "self_devotion": {
-        "type": "max_hp_rate"
-    }
-}
