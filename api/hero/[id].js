@@ -1,4 +1,4 @@
-import HeroDB from '../../js/heroes'
+import HeroDB from '../../js/heroes.js'
 
 export default function handler(req, res) {
     try {
