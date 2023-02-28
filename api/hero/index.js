@@ -1,10 +1,6 @@
-import { readFileSync } from 'fs';
-import path from 'path';
+import HeroList from '../../js/hero-list.js'
 
 export default function handler(req, res) {
-    const file = path.join(process.cwd(), 'db', 'heroes.json');
-    const stringified = readFileSync(file, 'utf8');
-  
     res.setHeader('Content-Type', 'application/json');
-    return res.end(stringified);
+    return res.end(JSON.stringify(HeroList));
 }
