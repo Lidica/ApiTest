@@ -2,7 +2,6 @@ const path = require('path')
 const fs = require('fs')
 const express = require("express");
 const app = express();
-var bodyParser = require("body-parser");
 
 const imprintHero = require('./js/imprint')
 

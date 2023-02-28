@@ -2,6 +2,7 @@
 node_modules
 heroes/
 buffs/
+api/
 
 # local env files
 .env.local
