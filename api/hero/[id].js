@@ -8,7 +8,7 @@ export default function handler(req, res) {
         const file = path.join(process.cwd(), 'db', 'heroes.json');
         var hero = JSON.parse(readFileSync(file, 'utf8'));
         for (var i = 0; i < hero.length; i++) {
-            if (hero[i]._id = id) {
+            if (hero[i]._id === id) {
                 hero = hero[i]
                 break
             }
@@ -50,7 +50,7 @@ export default function handler(req, res) {
             imprint(hero)
 
             res.setHeader('Content-Type', 'application/json');
-            return res.end(hero)
+            return res.end(JSON.stringify(hero))
         } else {
             return res.end('{"status": 404, "message": "Not found"}')
         }
