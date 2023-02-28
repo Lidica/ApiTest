@@ -1,12 +1,18 @@
 import { readFileSync } from 'fs';
 import path from 'path';
-// import imprint from '../../js/imprint'
+import imprint from '../../js/imprint'
 
 export default function handler(req, res) {
     try {
         const { id } = req.query;
         const file = path.join(process.cwd(), 'db', 'heroes.json');
-        var hero = JSON.parse(readFileSync(file, 'utf8'))[id];
+        var hero = JSON.parse(readFileSync(file, 'utf8'));
+        for (var i = 0; i < hero.length; i++) {
+            if (hero[i]._id = id) {
+                hero = hero[i]
+                break
+            }
+        }
         if (hero) {
             hero.name = hero.name?.en || ''
             hero.description = hero.description?.en || ''
@@ -41,12 +47,12 @@ export default function handler(req, res) {
                 skin.description = skin.description?.en || ''
             })
             
-            // imprint(hero)
+            imprint(hero)
 
             res.setHeader('Content-Type', 'application/json');
             return res.end(hero)
         } else {
-            return res.end(id)
+            return res.end('{"status": 404, "message": "Not found"}')
         }
     } catch(err) {
         return res.end(err.message)
