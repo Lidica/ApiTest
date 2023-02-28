@@ -2,7 +2,8 @@
 node_modules
 heroes/
 buffs/
-api/
+vercel.json
+index.js
 
 # local env files
 .env.local
