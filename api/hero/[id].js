@@ -14,6 +14,10 @@ export default function handler(req, res) {
             }
         }
         if (hero) {
+            JSON.parse(fs.readFileSync(path.join(process.cwd(), 'db', 'enhancements.json'))).forEach(eh => {
+                EnhanceData[eh._id] = eh.name
+            })
+            
             hero.name = hero.name?.en || ''
             hero.description = hero.description?.en || ''
             hero.story = hero.story?.en || ''
