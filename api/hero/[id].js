@@ -3,7 +3,7 @@ import { cors } from '../../js/middleware.js'
 
 export default function handler(req, res) {
     cors(req, res)
-    
+
     const { id } = req.query;
     var hero = HeroDB[id];
     if (hero) {
