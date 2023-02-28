@@ -1,5 +1,6 @@
 import { readFileSync } from 'fs';
 import path from 'path';
+import { cors } from '../../js/middleware.js'
 
 export default async function handler(req, res) {
     await cors(req, res)
