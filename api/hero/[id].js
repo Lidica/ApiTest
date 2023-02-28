@@ -46,6 +46,6 @@ export default function handler(req, res) {
         res.setHeader('Content-Type', 'application/json');
         return res.end(hero);
     } catch(err) {
-        return res.end(err)
+        return res.end(err.message)
     }
 }
