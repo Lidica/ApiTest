@@ -14,7 +14,8 @@ export default function handler(req, res) {
             }
         }
         if (hero) {
-            JSON.parse(fs.readFileSync(path.join(process.cwd(), 'db', 'enhancements.json'))).forEach(eh => {
+            var EnhanceData = {};
+            JSON.parse(readFileSync(path.join(process.cwd(), 'db', 'enhancements.json'))).forEach(eh => {
                 EnhanceData[eh._id] = eh.name
             })
             
