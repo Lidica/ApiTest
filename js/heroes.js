@@ -1,10 +1,9 @@
 import { readFileSync } from 'fs';
 import path from 'path';
-import imprint from './imprint'
+import imprint from './imprint.js'
 
 var Heroes = {},
     EnhanceData = {};
-
 
 JSON.parse(readFileSync(path.join(process.cwd(), 'db', 'enhancements.json'))).forEach(eh => {
     EnhanceData[eh._id] = eh.name
