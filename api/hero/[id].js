@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 import path from 'path';
-import imprint from '../../js/imprint'
+// import imprint from '../../js/imprint'
 
 export default function handler(req, res) {
     try {
@@ -41,7 +41,7 @@ export default function handler(req, res) {
             skin.description = skin.description?.en || ''
         })
         
-        imprint(hero)
+        // imprint(hero)
 
         res.setHeader('Content-Type', 'application/json');
         return res.end(hero);
